@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
+
 // import type { NextPage } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,11 +19,16 @@ export default function Home() {
 
       <Header />
       
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
       
       {/* About */}
+
+      <section id="About" className='snap-center'>
+        <About/>
+      </section>
+
 
       {/* Experience */}
 
