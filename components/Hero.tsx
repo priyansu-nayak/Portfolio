@@ -2,7 +2,7 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 // import BackgroundCircles from '@/components/BackgroundCircles'
-
+import Dp from "D:/Builds/portfolio-yt-2.0/Dp.jpg"
 type Props = {}
 
 export default function Hero({ }: Props) {
@@ -18,11 +18,23 @@ export default function Hero({ }: Props) {
 
     return (
         <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-            <BackgroundCircles/>
-            <h1>
-                <span>{text}</span>
-                <Cursor cursorColor='#F7AB0A'></Cursor>
-            </h1>
+            <BackgroundCircles />
+
+            <img className="rounded-full relative w-36 h-36 mx-auto my-auto object-cover "
+                src="https://cdn.sanity.io/images/ltuexkre/production/a766c574c295f2103c63c2dfdf675557c664d016-600x600.png" alt="Profile Picture" />
+
+            <div>
+                <h2 className=" tracking-[8px] text-sm uppercase text-gray-500 pb-2">
+                    Software Developer
+                </h2>
+                
+                <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+                    <span className='mr-3'>{text}</span>
+                    <Cursor cursorColor='#F7AB0A'></Cursor>
+                </h1>
+
+            </div>
+
         </div>
 
     )
