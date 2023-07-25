@@ -1,5 +1,7 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import BackgroundCircles from './BackgroundCircles';
+// import BackgroundCircles from '@/components/BackgroundCircles'
 
 type Props = {}
 
@@ -16,6 +18,7 @@ export default function Hero({ }: Props) {
 
     return (
         <div>
+            <BackgroundCircles/>
             <h1>
                 <span>{text}</span>
                 <Cursor cursorColor='#F7AB0A'></Cursor>
