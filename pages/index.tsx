@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
+import Skills from '@/components/Skills'
 
 
 // import type { NextPage } from 'next'
@@ -29,12 +30,13 @@ export default function Home() {
         <About />
       </section>
 
-      {/* Experience */}
-
       <section id="Experience" className='snap-center'>
         <Experience />
       </section>
-      {/* Skills */}
+
+      <section id="Skills" className='snap-start'>
+        <Skills/>
+      </section>
 
       {/* Projects */}
 
