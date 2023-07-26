@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import ExperienceCards from './ExperienceCards'
 
 type Props = {}
 
@@ -11,9 +12,11 @@ export default function Experience({ }: Props) {
                 opacity: 0,
 
             }}
+            
             whileInView={{
                 opacity: 1
             }}
+
             transition={{
                 duration: 1.5
             }}
@@ -29,9 +32,9 @@ export default function Experience({ }: Props) {
     ' >Experience</h3>
 
             <div>
-                {/* ExperienceCard */}
-                {/* ExperienceCard */}
-                {/* ExperienceCard */}
+                <ExperienceCards/>
+                <ExperienceCards/>
+                <ExperienceCards/>
             </div>
 
         </motion.div>
