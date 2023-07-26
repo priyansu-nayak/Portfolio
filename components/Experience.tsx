@@ -33,8 +33,9 @@ export default function Experience({ }: Props) {
 
             <div>
                 <ExperienceCards/>
+                {/* <ExperienceCards/>
                 <ExperienceCards/>
-                <ExperienceCards/>
+                <ExperienceCards/> */}
             </div>
 
         </motion.div>
