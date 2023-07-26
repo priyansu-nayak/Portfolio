@@ -20,13 +20,13 @@ export default function Home() {
 
       <Header />
       
-      <section id="hero" className="snap-start">
+      <section id="hero" className="">
         <Hero />
       </section>
       
       {/* About */}
 
-      <section id="About" className='snap-center'>
+      <section id="About" className=''>
         <About/>
       </section>
 
