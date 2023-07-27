@@ -38,7 +38,11 @@ export default function Home() {
         <Skills/>
       </section>
 
-      {/* Projects */}
+      
+      <section id="Projects">
+
+
+      </section>
 
       {/* Contact Me */}
 
