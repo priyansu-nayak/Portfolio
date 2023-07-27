@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
 
 
 // import type { NextPage } from 'next'
@@ -35,13 +36,12 @@ export default function Home() {
       </section>
 
       <section id="Skills" className='snap-start'>
-        <Skills/>
+        <Skills />
       </section>
 
-      
-      <section id="Projects">
 
-
+      <section id="Projects" className="snap-start">
+        <Projects />
       </section>
 
       {/* Contact Me */}
