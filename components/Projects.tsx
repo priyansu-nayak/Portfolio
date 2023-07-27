@@ -13,15 +13,20 @@ export default function Projects({ }: Props) {
       </h3>
 
       <div className='relative w-full flex overflow-x-scroll 
-      overflow-y-hidden snap-mandatory z-0 '>
+      overflow-y-hidden snap-x snap-mandatory z-0 '>
         {projects.map((project) => (
-          <div>
+          <div className='w-screen flex-shrink-0 snap-center'>
             <img src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png"
-             alt="Pic" />
+              alt="Pic" />
+
+            <div>
+              <h4>Case Study 1 of 3:UPS clone</h4>
+            </div>
+
           </div>
         )
         )}
-      
+
 
 
 
