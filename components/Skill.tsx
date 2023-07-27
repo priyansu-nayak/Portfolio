@@ -7,7 +7,7 @@ type Props = {
 
 };
 
-export default function Skill({directionLeft }: Props) {
+export default function Skill({ directionLeft }: Props) {
     return (
         <div className='group relative flex cursor-pointer'>
             <motion.img
@@ -26,8 +26,22 @@ export default function Skill({directionLeft }: Props) {
                     opacity: 1,
                     x: 0
                 }}
+                viewport={{ once: true }}
+                src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png"
 
-                src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png" alt="SKill" />
+                alt="Skill"
+
+                className='rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32
+                 filter group-hover:grayscale transition duration-1000 ease-in-out'
+            />
+            <div className="absolute opacity-0 group-hover:opacity-80 transition duration-1000 
+            ease-in-out group-hover:bg-white h-12 w-12 rounded-full  ">
+                <div className='flex items-center justify-center h-full' >
+                    <p className="text-xl font-bold text-black opacity-100">
+                        100%
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }
