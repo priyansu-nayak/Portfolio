@@ -27,9 +27,8 @@ export default function Skill({directionLeft }: Props) {
                     x: 0
                 }}
 
-                src="" alt="SKill" />
+                src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png" alt="SKill" />
         </div>
     )
 }
 
-//1:48:58
