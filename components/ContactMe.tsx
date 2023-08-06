@@ -1,9 +1,20 @@
 import React from 'react'
+import { useForm, SubmitHandler } from "react-hook-form"
+
 import { BeakerIcon, EnvelopeIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 type Props = {}
 
 export default function ContactMe({ }: Props) {
+
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm<Inputs>()
+    const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+
     return (
         <div className='h-screen flex flex-col items-center relative md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto '>
             <h3 className='absolute top-24 text-gray-500 tracking-[20px] uppercase  '>
@@ -43,7 +54,7 @@ export default function ContactMe({ }: Props) {
 
                     <input placeholder="Subject" className='contactInput' type="text" />
                     <textarea placeholder="Message"
-                    className='contactInput' />
+                        className='contactInput' />
 
                     <button type="submit" className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg' >Submit</button>
                 </form>
