@@ -1,5 +1,5 @@
 import React from 'react'
-import { BeakerIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { BeakerIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 type Props = {}
 
@@ -17,9 +17,17 @@ export default function ContactMe({ }: Props) {
                 </h4>
 
                 <div className='flex items-center space-x-5 justify-center'>
-                    <PhoneIcon className='text-[#F7AB0A]'/>
-                    <p>324234324</p>
+                    <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                    <p className='text-2xl '>324234324</p>
                 </div>
+
+                <div className='flex items-center space-x-5 justify-center'>
+                    <MapIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                    <p className='text-2xl '>123 Developer Lane</p>
+                </div>
+
+
+
             </div>
 
         </div>
