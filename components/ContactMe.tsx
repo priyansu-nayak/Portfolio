@@ -16,7 +16,9 @@ export default function ContactMe({ }: Props) {
     const { register,
         handleSubmit,
     } = useForm<Inputs>();
-    const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+    const onSubmit: SubmitHandler<Inputs> = (formData) => {
+        window.location.href='mailto:papareact.team@gmail?subject=${formData.subject}&body=Hi,my name is ${formData.name}. ${formData.message} ${formData.email}';
+    }
 
     return (
         <div className='h-screen flex flex-col items-center relative md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto '>
